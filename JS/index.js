@@ -22,7 +22,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // For the Automatic typing happening on the Page.
 var typed = new Typed(".auto-type", {
-  strings: ["Secure,", "Strategise And,", "Maximise."],
+  strings: ["Secure,", "Strategise And,", "Maximise,"],
   smartBackspace: true,
   typeSpeed: 120,
   backSpeed: 140,

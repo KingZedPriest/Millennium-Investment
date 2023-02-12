@@ -1,0 +1,112 @@
+This the Whatsapp Chat Icon. Please Add at the bottom, before the </body> tag of every page it will appear. In this case, I think all.
+ 
+ <!-- Whatsapp Chat Icon -->
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var gcaMain = new GetChatApp({
+          mobileNumber: "+447458948030",
+          titleMessage: "👋 Get Instant Support!",
+          welcomeMessage:
+            "Hey there!🙌<br /> <br /> Welcome! How may I assist you today?<br /> <br /> ~Your Name",
+          position: "left",
+          platforms: {
+            whatsapp: true,
+            facebook: false,
+            email: false,
+            instagram: false,
+            telegram: false,
+          },
+          facebookPageId: "",
+          gcaEmailAddress: "",
+          gcaEmailSubject: "",
+          gcaInstagramUsername: "",
+          gcaTelegramUsername: "",
+        });
+      });
+    </script>
+
+    This is the other right side Chat. Please Add at the bottom, before the </body> tag of every page it will appear. In this case, I think all.
+    Both can be placed on top of eachother, any way, they will work.
+       
+        <!-- Other Chat -->
+    <call-us
+      phonesystem-url="https://1213.3cx.cloud"
+      style="
+        position: fixed;
+        font-size: 16px;
+        line-height: 17px;
+        z-index: 99999;
+        --call-us-main-accent-color: #3397d4;
+        --call-us-main-background-color: #ffffff;
+        --call-us-plate-background-color: #373737;
+        --call-us-plate-font-color: #e6e6e6;
+        --call-us-main-font-color: #000000;
+        --call-us-agent-bubble-color: #00000010;
+        right: 20px;
+        bottom: 20px;
+      "
+      id="wp-live-chat-by-3CX"
+      minimized="true"
+      animation-style="slidefromside"
+      party="millenniuminvestment"
+      minimized-style="bubbleright"
+      allow-call="false"
+      allow-video="false"
+      allow-soundnotifications="true"
+      enable-mute="true"
+      enable-onmobile="true"
+      offline-enabled="true"
+      enable="true"
+      ignore-queueownership="false"
+      authentication="none"
+      operator-name="Katie Robertson"
+      show-operator-actual-name="false"
+      aknowledge-received="true"
+      gdpr-enabled="false"
+      message-userinfo-format="both"
+      message-dateformat="both"
+      lang="browser"
+      button-icon-type="doublebubble"
+      invite-message="Hello!, How Can I Help You Today?"
+      unavailable-message="Hello!, How Can I Help You Today?"
+      ending-message="Your Session Is Over, Please Feel Free To Contact Us Anytime."
+      greeting-visibility="both"
+      greeting-offline-visibility="both"
+      greeting-message="Need Some Assistance?"
+      greeting-offline-message="Need Some Assistance?"
+      chat-delay="2000"
+      enable-direct-call="false"
+      enable-ga="false"
+    ></call-us>
+    <script
+      defer
+      src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
+      id="tcx-callus-js"
+      charset="utf-8"
+    ></script>
+
+Google Translator. This should be added at the bottom of the page before the </body>, any where it is placed is fine, and will work. Whether on top of the two, no one cares.
+And also, I don't know if it should be at every page....
+<!-- Google Translator -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    This one should is also among the Google Translator but it should be added where you want it to appear. In this case after the <body> tag, before the nav section.
+    
+    <div id="google_translate_element"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            },
+            "google_translate_element"
+          );
+        }
+      </script>
+
+      For other styles I did to the index page, I added some images, please. I ran the css build.

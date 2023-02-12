@@ -7,6 +7,16 @@ btn.addEventListener("click", () => [
   nav.classList.toggle("flex"),
   nav.classList.toggle("hidden"),
 ]);
+//For The Top Section
+var swiper1 = new Swiper(".mySwiper1", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+});
+
 // For The Animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -27,11 +37,10 @@ var typed = new Typed(".auto-type", {
   loop: true,
   showCursor: true,
   cursorChar: "|",
-  autoInsertCss: true
-})
+  autoInsertCss: true,
+});
 
 //Testimonial Section
-
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -64,44 +73,44 @@ calculate = () => {
     if (investingAmount.value > 5000) {
       display.innerText = "The Maximum You Can Invest is £5,000.";
     }
-    if(investingAmount.value >= 250 && investingAmount.value <= 5000) {
+    if (investingAmount.value >= 250 && investingAmount.value <= 5000) {
       display.innerText =
         "Contact The Admin For More Information About This Package.";
     }
-  } 
-  if (standard.checked === true){
+  }
+  if (standard.checked === true) {
     if (investingAmount.value < 100) {
       display.innerText = "The Minimum You Can Invest is £100.";
     }
     if (investingAmount.value > 10000) {
       display.innerText = "The Maximum You Can Invest is £10,000.";
     }
-    if(investingAmount.value >= 100 && investingAmount.value <= 10000) {
-      const gain = 0.12 * investingAmount.value
+    if (investingAmount.value >= 100 && investingAmount.value <= 10000) {
+      const gain = 0.12 * investingAmount.value;
       display.innerText = "You Will Make £" + gain + " After 24 Hours.";
     }
   }
-  if (essential.checked === true){
+  if (essential.checked === true) {
     if (investingAmount.value < 1000) {
       display.innerText = "The Minimum You Can Invest is £1,000.";
     }
     if (investingAmount.value > 50000) {
       display.innerText = "The Maximum You Can Invest is £50,000.";
     }
-    if(investingAmount.value >= 1000 && investingAmount.value <= 50000) {
-      const gain = 0.25 * investingAmount.value
+    if (investingAmount.value >= 1000 && investingAmount.value <= 50000) {
+      const gain = 0.25 * investingAmount.value;
       display.innerText = "You Will Make £" + gain + " After 12 Days.";
     }
   }
-  if (premium.checked === true){
+  if (premium.checked === true) {
     if (investingAmount.value < 10000) {
       display.innerText = "The Minimum You Can Invest is £10,000.";
     }
     if (investingAmount.value > 500000) {
       display.innerText = "The Maximum You Can Invest is £500,000.";
     }
-    if(investingAmount.value >= 10000 && investingAmount.value <= 500000) {
-      const gain = 0.4 * investingAmount.value
+    if (investingAmount.value >= 10000 && investingAmount.value <= 500000) {
+      const gain = 0.4 * investingAmount.value;
       display.innerText = "You Will Make £" + gain + " After 15 Days.";
     }
   }

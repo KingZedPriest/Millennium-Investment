@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Millennium Investment" />
+    <title>Millennium Investment</title>
     <meta
       name="description"
       content="Millennium Investment is a cryptocurrency investment company that specialises in providing our investors with a wide range of investment options."
@@ -23,7 +23,7 @@
     />
     <meta
       property="og:image"
-      content="http://res.cloudinary.com/dpu5ywrox/image/upload/v1675753477/gr6mtle4z2nkgs2qy8qi.png"
+      content="http://res.cloudinary.com/dpu5ywrox/image/upload/v1676155505/g2tiks5o5gjbpx0xujcb.png"
     />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="millenniuminvestment.net" />
@@ -34,7 +34,7 @@
     />
     <meta
       property="twitter:image"
-      content="http://res.cloudinary.com/dpu5ywrox/image/upload/v1675753477/gr6mtle4z2nkgs2qy8qi.png"
+      content="http://res.cloudinary.com/dpu5ywrox/image/upload/v1676155505/g2tiks5o5gjbpx0xujcb.png"
     />
     <!-- Favicon -->
     <link rel="shortcut icon" href="../Images/Logo.ico" type="image/x-icon" />
@@ -59,8 +59,20 @@
     <link rel="stylesheet" href="../CSS/main.css" />
   </head>
   <body class="bg-darkNavy">
+    <div id="google_translate_element"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            },
+            "google_translate_element"
+          );
+        }
+      </script>
     <!-- Nav Bar -->
-    <nav class="relative mx-auto p-6 container">
+    <nav class="relative mx-auto px-6 container">
       <!-- Flex Box -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -74,7 +86,7 @@
         </div>
         <!-- Menu Items -->
         <div class="hidden md:flex space-x-12">
-          <a href="#" class="font-semibold hover:text-gold text-lightGray"
+          <a href="#" class="font-semibold text-gold hover:text-lightGray"
             >Home</a
           >
           <a href="#" class="font-semibold text-gold hover:text-lightGray"
@@ -113,9 +125,9 @@
       <div class="md:hidden">
         <div
           id="menu"
-          class="hidden absolute flex-col items-center self-end py-8 mt-14 space-y-6 font-bold bg-darkNavy sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          class="hidden absolute flex-col items-center z-50 self-end py-8 mt-14 space-y-6 font-bold bg-darkNavy sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
         >
-          <a class="font-semibold hover:text-gold text-lightGray" href="#"
+          <a class="font-semibold text-gold hover:text-lightGray" href="#"
             >Home</a
           >
           <a class="font-semibold text-gold hover:text-lightGray" href="#"
@@ -184,11 +196,26 @@
           </div>
         </div>
         <!-- Top Image -->
-        <div class="mb-16 md:w-1/2 md:ml-10">
-          <img
-            src="../Images/image-removebg-preview.png"
-            alt="Illustration Picture"
-          />
+        <div class="top mb-16 md:w-1/2 md:ml-10">
+          <div class="swiper1 mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="../Images/image-removebg-preview.png"
+                  alt="Illustration Picture"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img src="../Images/image1.png" alt="Illustration Picture" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../Images/image2.png" alt="Illustration Picture" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../Images/image3.png" alt="Illustration Picture" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -351,10 +378,10 @@
           <a
             href="#"
             class="p-3 px-6 pt-3 duration-1000 text-darkNavy bg-gold rounded-lg hover:bg-darkNavy hover:text-lightGray"
-            >Discovery More</a
+            >Discover More</a
           >
         </div>
-        <div class="md:w-1/2 md:ml-10 min-w-fit hide">
+        <div class="whoAreWe md:w-1/2 md:ml-10 min-w-fit hide">
           <img src="../Images/chooseUs1.png" alt="Why choose us?" />
         </div>
       </div>
@@ -469,7 +496,7 @@
             <div class="me-holder w-20 h-20 rounded-full mx-auto">
               <i class="me fas fa-donate fa-2x"></i>
             </div>
-            <p class="text-body mt-5 text-lg text-lightGray">Reinvest</p>
+            <p class="text-body mt-5 text-lg text-lightGray">Re-Invest</p>
             <p class="text-left mt-5 text-gold">
               Keep reinvesting to sustain growth and generate additional
               revenue.
@@ -553,7 +580,7 @@
           </h1>
           <p class="px-10 text-lightGray">
             We understand the complexity and volatility of the cryptocurrency
-            market, that's why we have designed various plans to cater to your
+            market, that's why we have designed various plans to cater for your
             specific investment needs. Please review and choose the one that
             most effectively aligns with your investment objectives.
           </p>
@@ -741,7 +768,7 @@
           </p>
         </div>
         <div class="py-6 md:w-1/3 hide">
-          <div class="coin">
+          <div class="btc-coin">
             <div class="side heads">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -994,18 +1021,51 @@
         </div>
       </div>
     </section>
-    <script
-      type="text/javascript"
-      src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
-    ></script>
-    <div
-      id="coinmarketcap-widget-marquee"
-      coins="1,1027,825,17751,23196,9799,1839,3408,52,4687,2010,74,5426,3890,2,5994,4943,1958,5805,7083,3794,3717"
-      currency="USD"
-      theme="light"
-      transparent="false"
-      show-symbol-logo="true"
-    ></div>
+    <section class="price-section">
+      <div class="mt-10 bg-white px-6">
+        <div
+          class="cryptohopper-web-widget"
+          data-id="1"
+          data-chart_color="#0f2331"
+          data-table_title="Crypto Market "
+          data-numcoins="100"
+          data-realtime="on"
+          data-currency="GBP"
+          data-table_length="10"
+        ></div>
+      </div>
+    </section>
+    <section class="text-center">
+      <div class="mt-10 p-6 bg-darkNavy flex flex-col flex-wrap justify-evenly align-center md:flex-row md:space-x-0 md:space-y-10">
+        <div>
+          <img class="w-full" src="../Images/looking.png" alt="Millennium Investment Staff Image">
+        </div>
+        <div>
+          <h1 class="text-gold font-bold mt-10 text-3xl md:text-5xl">Where to Buy Cryptocurrency</h1>
+      <p class="text-lightGray mt-4 mb-20 text-sm md:text-base">Discover Trusted Platforms for Safe and Secure Transactions.</p>
+      <div class="flex flex-col md:flex-row justify-evenly space-y-6 md:space-y-0">
+        <div class= "text-center">
+          <h2 class="text-lightGray font-bold">Buy From Binance</h2>
+          <a href="https://www.binance.com" target="_blank"> <button class="buy-button mt-4">
+            Binance.com
+          </button></a>
+        </div>
+        <div class="text-center">
+          <h2 class="text-lightGray font-bold">Buy From Coinbase</h2>
+          <a href="https://www.coinbase.com" target="_blank"><button class="buy-button mt-4">
+            Coinbase.com
+          </button> </a> 
+        </div>
+        <div class="text-center">
+          <h2 class="text-lightGray font-bold">Buy From Crypto</h2>
+          <a href="https://www.crypto.com" target="_blank"> <button class="buy-button mt-4">
+            Crypto.com
+          </button></a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
     <section id="cta" class="bg-white">
       <div
         class="flex flex-col hide mt-10 items-center shadow-2xl justify-around px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
@@ -1048,6 +1108,10 @@
               Unit 24 Highcroft Industrial Estate Enterprise Road, Horndean,
               Waterlooville, United Kingdom, PO8 0BT.
             </p>
+            <p class="mt-10 text-sm w-48 text-gold">
+              admin@millenniuminvestment.net
+              support@millenniuminvestment.net
+            </p>
           </div>
         </div>
         <!-- List Container -->
@@ -1056,7 +1120,7 @@
             <a
               href="#
             "
-              class="text-lightGray hover:text-gold"
+              class="hover:text-lightGray text-gold"
               >Home</a
             >
             <a
@@ -1128,7 +1192,95 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Price JS Link -->
+    <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+    <!-- Google Translator -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
     <!-- Custom JS -->
     <script src="../JS/index.js"></script>
+    <!-- Whatsapp Chat Icon -->
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var gcaMain = new GetChatApp({
+          mobileNumber: "+447458948030",
+          titleMessage: "👋 Get Instant Support!",
+          welcomeMessage:
+            "Hey there!🙌<br /> <br /> Welcome! How may I assist you today?<br /> <br /> ~Your Name",
+          position: "left",
+          platforms: {
+            whatsapp: true,
+            facebook: false,
+            email: false,
+            instagram: false,
+            telegram: false,
+          },
+          facebookPageId: "",
+          gcaEmailAddress: "",
+          gcaEmailSubject: "",
+          gcaInstagramUsername: "",
+          gcaTelegramUsername: "",
+        });
+      });
+    </script>
+    <!-- Other Chat -->
+    <call-us
+      phonesystem-url="https://1213.3cx.cloud"
+      style="
+        position: fixed;
+        font-size: 16px;
+        line-height: 17px;
+        z-index: 99999;
+        --call-us-main-accent-color: #3397d4;
+        --call-us-main-background-color: #ffffff;
+        --call-us-plate-background-color: #373737;
+        --call-us-plate-font-color: #e6e6e6;
+        --call-us-main-font-color: #000000;
+        --call-us-agent-bubble-color: #00000010;
+        right: 20px;
+        bottom: 20px;
+      "
+      id="wp-live-chat-by-3CX"
+      minimized="true"
+      animation-style="slidefromside"
+      party="millenniuminvestment"
+      minimized-style="bubbleright"
+      allow-call="false"
+      allow-video="false"
+      allow-soundnotifications="true"
+      enable-mute="true"
+      enable-onmobile="true"
+      offline-enabled="true"
+      enable="true"
+      ignore-queueownership="false"
+      authentication="none"
+      operator-name="Katie Robertson"
+      show-operator-actual-name="false"
+      aknowledge-received="true"
+      gdpr-enabled="false"
+      message-userinfo-format="both"
+      message-dateformat="both"
+      lang="browser"
+      button-icon-type="doublebubble"
+      invite-message="Hello!, How Can I Help You Today?"
+      unavailable-message="Hello!, How Can I Help You Today?"
+      ending-message="Your Session Is Over, Please Feel Free To Contact Us Anytime."
+      greeting-visibility="both"
+      greeting-offline-visibility="both"
+      greeting-message="Need Some Assistance?"
+      greeting-offline-message="Need Some Assistance?"
+      chat-delay="2000"
+      enable-direct-call="false"
+      enable-ga="false"
+    ></call-us>
+    <script
+      defer
+      src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
+      id="tcx-callus-js"
+      charset="utf-8"
+    ></script>
   </body>
 </html>
